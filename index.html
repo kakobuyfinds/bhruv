@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#241b37">
+<title>FansBuy spreadsheet | Categorías, tallas y fotos QC</title>
+<meta name="description" content="Explora diez categorías de HipoBuyFind y usa esta guía de FansBuy spreadsheet para comparar tallas, revisar fotos QC y calcular el coste total del pedido.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="FansBuy spreadsheet | Categorías, tallas y fotos QC">
+<meta property="og:description" content="Diez categorías de HipoBuyFind y una guía para revisar fichas, tallas, fotos de almacén y costes antes de comprar.">
+<style>
+:root{color-scheme:light;--paper:#f8f6fb;--ink:#241b37;--muted:#594f66;--line:#ded5e7;--accent:#f4d46e}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.6 system-ui,sans-serif}
+.wrap{width:min(70rem,calc(100% - 2rem));margin-inline:auto}
+header{background:var(--ink);color:white}
+.bar{display:flex;justify-content:space-between;align-items:center;gap:1rem;min-height:3.75rem;font-weight:700}
+a{color:inherit;text-underline-offset:.2em}
+a:focus-visible,summary:focus-visible{outline:3px solid #a24d75;outline-offset:3px}
+header a:focus-visible{outline-color:var(--accent)}
+nav{padding-block:1.3rem}
+nav ul{list-style:none;padding:0;margin:.65rem 0 0;display:grid;grid-template-columns:repeat(5,1fr);gap:.5rem}
+nav a{display:flex;align-items:center;min-height:44px;height:100%;padding:.45rem .7rem;background:white;border:1px solid var(--line);border-radius:.4rem;text-decoration:none;font-weight:650}
+nav a:hover{background:#f2e8fb}
+.hero{display:grid;grid-template-columns:1.15fr 1fr;align-items:center;background:var(--ink);color:white;border-radius:1rem;overflow:hidden}
+.intro{padding:clamp(1.25rem,5vw,3.5rem)}
+h1,h2,h3,p,figure{margin:0}
+h1{font-size:clamp(2.3rem,6vw,4.6rem);line-height:1;letter-spacing:-.055em;overflow-wrap:anywhere}
+h2{font-size:clamp(1.5rem,3vw,2.1rem);line-height:1.15}
+h3{font-size:1.1rem;line-height:1.3}
+p{margin-top:.65rem}
+.button{display:inline-flex;align-items:center;min-height:44px;margin-top:1rem;padding:.55rem 1rem;background:var(--accent);color:var(--ink);border-radius:.4rem;font-weight:800;text-decoration:none}
+.photo{background:#eeeaf3;color:var(--muted)}
+img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:contain;background:white}
+.hero img{aspect-ratio:5/4}
+figcaption{padding:.55rem .8rem;font-size:.88rem}
+section,footer{margin-top:2.5rem}
+.gallery,.guides{display:grid;gap:.8rem;margin-top:1rem}
+.gallery{grid-template-columns:repeat(4,1fr)}
+.gallery figure,.guides article,details{border:1px solid var(--line);border-radius:.65rem;overflow:hidden}
+.guides{grid-template-columns:repeat(2,1fr)}
+.guides article,details{background:white;padding:1rem}
+details{margin-top:.65rem}
+summary{cursor:pointer;font-weight:750}
+.muted,footer{color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:1rem 0 2rem}
+@media(max-width:48rem){nav ul{grid-template-columns:repeat(3,1fr)}.hero{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:29rem){nav ul,.guides{grid-template-columns:repeat(2,minmax(0,1fr))}.guides{grid-template-columns:1fr}.bar{font-size:.9rem}}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "inLanguage":"es",
+  "name":"FansBuy spreadsheet | Categorías, tallas y fotos QC",
+  "description":"Guía independiente en español para comparar fichas, tallas, fotos de almacén y costes de envío.",
+  "mainEntity":[
+    {"@type":"Question","name":"¿Qué es un FansBuy spreadsheet?","acceptedAnswer":{"@type":"Answer","text":"Es un directorio de enlaces a productos que sirve para localizar fichas y comparar variantes. En esta guía, las categorías llevan al catálogo de HipoBuyFind."}},
+    {"@type":"Question","name":"¿Necesito Excel para consultar las categorías?","acceptedAnswer":{"@type":"Answer","text":"No. Los enlaces se abren en el navegador y puedes consultar las categorías desde el móvil."}},
+    {"@type":"Question","name":"¿Cómo elijo la talla si la ficha usa otra numeración?","acceptedAnswer":{"@type":"Answer","text":"Compara las medidas en centímetros de la variante elegida con las de una prenda o un calzado que ya te quede bien."}},
+    {"@type":"Question","name":"¿Las fotos QC confirman la autenticidad?","acceptedAnswer":{"@type":"Answer","text":"Una foto QC permite revisar el estado y la variante recibida. Para comprobar la autenticidad, consulta la procedencia y la documentación del vendedor."}},
+    {"@type":"Question","name":"¿Cómo estimo el coste total de un envío a España o Latinoamérica?","acceptedAnswer":{"@type":"Answer","text":"Suma el producto, el envío local, las comisiones y el transporte internacional. Consulta si se aplican impuestos o gastos de gestión en el país de destino."}}
+  ]
+}
+</script>
+<!-- Investigación editorial: se intentó consultar Google directamente. Su página de resultados no estuvo accesible, así que las siguientes referencias proceden de una búsqueda web alternativa y no representan posiciones verificadas de Google.
+fansbuy.net/spreadsheet — categorías, enlaces y variantes
+fansbuysheets.net — catálogo consultable y fotos QC
+fansbuy.co.uk — referencias para compradores del Reino Unido
+fansbuylists.com — zapatillas, ropa y fotos de control
+fansbuys.net — categorías y revisión de fichas
+fansbuy.ca — presupuesto de envío y comprobaciones
+fansbuyspreadsheet.com — guía para principiantes
+usfansfindlinks.com/find/fansbuy-spreadsheet — comparación de directorios
+globalfinds.gg/spreadsheet — fichas y enlaces de marketplace
+hipobuywithqc.com/spreadsheet/shoes — tallas de calzado y QC
+Consultas secundarias: guía FansBuy en español; catálogo de zapatillas y ropa; fotos QC de almacén; tallas y envío internacional.
+-->
+<link rel="canonical" href="https://kakobuyfinds.github.io/bhruv/">
+</head>
+<body>
+<header>
+  <div class="wrap bar"><span>Guía de compra</span><a href="https://www.hipobuyfind.com">HipoBuyFind</a></div>
+</header>
+<main class="wrap">
+  <nav aria-label="Categorías de HipoBuyFind">
+    <h2>Explorar por categoría</h2>
+    <ul>
+      <li><a href="https://hipobuyfind.com/category-911-Shoes.html">Zapatillas</a></li>
+      <li><a href="https://hipobuyfind.com/category-912-Hoodies%2FSweaters.html">Sudaderas y jerséis</a></li>
+      <li><a href="https://hipobuyfind.com/category-913-T-Shirts.html">Camisetas</a></li>
+      <li><a href="https://hipobuyfind.com/category-914-Jackets.html">Chaquetas</a></li>
+      <li><a href="https://hipobuyfind.com/category-915-Pants%2FShorts.html">Pantalones y shorts</a></li>
+      <li><a href="https://hipobuyfind.com/category-916-Headwear.html">Gorras y sombreros</a></li>
+      <li><a href="https://hipobuyfind.com/category-917-Sets.html">Conjuntos</a></li>
+      <li><a href="https://hipobuyfind.com/category-918-underwear%2Funderpants.html">Ropa interior</a></li>
+      <li><a href="https://hipobuyfind.com/category-919-Jersey.html">Camisetas deportivas</a></li>
+      <li><a href="https://hipobuyfind.com/category-920-Accessories.html">Accesorios</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero">
+    <div class="intro">
+      <h1>FansBuy spreadsheet</h1>
+      <p>Encuentra la categoría que buscas y comprueba la talla, la variante y el coste del envío antes de elegir. Los enlaces de esta guía abren el catálogo de HipoBuyFind.</p>
+      <a class="button" href="https://www.hipobuyfind.com">Abrir HipoBuyFind</a>
+    </div>
+    <figure class="photo">
+      <img src="https://www.soleclassics.com/cdn/shop/files/AURORA_DD1391-100_PHSLH001-2000.jpg?v=1693925477&amp;width=640" width="640" height="512" fetchpriority="high" loading="eager" alt="Vista lateral de una zapatilla Nike Dunk Low blanca y negra">
+      <figcaption>Nike Dunk Low en blanco y negro</figcaption>
+    </figure>
+  </div>
+
+  <section aria-labelledby="revision">
+    <h2 id="revision">Cuatro comprobaciones antes de comprar</h2>
+    <div class="guides">
+      <article>
+        <h3>Abre la ficha y selecciona la variante</h3>
+        <p>Si partes de un enlace de Weidian, Taobao o 1688, comprueba que la ficha del vendedor sigue activa. Anota la referencia del producto y selecciona color y talla. La foto principal puede mostrar una variante distinta. Si comparas dos vendedores, guarda el enlace original de cada ficha para poder volver a ella.</p>
+      </article>
+      <article>
+        <h3>Compara medidas en centímetros</h3>
+        <p>Para elegir talla de zapatillas, mide el pie más largo y consulta la tabla del vendedor. Si la ficha indica longitud de plantilla, compárala con la de un par que ya uses. En sudaderas y camisetas compara ancho de pecho, largo de espalda y manga. En pantalones revisa cintura, tiro y entrepierna. Para una camiseta deportiva, comprueba también si el corte es ajustado.</p>
+      </article>
+      <article>
+        <h3>Lee las fotos QC de almacén</h3>
+        <p>Compara las fotos de control de calidad con la variante que pediste. En zapatillas, revisa ambos laterales, la talla de la etiqueta y el estado de la suela. En ropa, fíjate en el estampado, las costuras y la cremallera. Si falta la medida que necesitas, solicita una foto con cinta métrica antes de autorizar el envío.</p>
+      </article>
+      <article>
+        <h3>Calcula el coste hasta tu dirección</h3>
+        <p>Para comparar envíos a España, México o cualquier otro destino, introduce el código postal y las dimensiones del paquete en la calculadora del transportista cuando esté disponible. Una caja grande puede aumentar el peso volumétrico. Añade las comisiones, confirma la moneda del cobro y consulta qué gastos podrían cobrarse al recibir el pedido.</p>
+      </article>
+    </div>
+  </section>
+
+  <section aria-labelledby="detalles">
+    <h2 id="detalles">Detalles que conviene comparar</h2>
+    <p class="muted">Las imágenes son referencias visuales. Consulta la ficha del vendedor para confirmar disponibilidad y características.</p>
+    <div class="gallery">
+      <figure class="photo">
+        <img src="https://en.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-monogram-denim-jacket--FVJA29EFY610_PM2_Front%20view.png?hei=480&amp;wid=480" width="480" height="480" loading="lazy" decoding="async" alt="Vista frontal de una chaqueta vaquera Louis Vuitton con monograma">
+        <figcaption>Louis Vuitton · Compara el largo de manga y revisa el cierre.</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="https://media.gucci.com/style/HEXFBFBFB_South_0_160_640x640/1751298339/838745_3HBC4_2600_001_100_0000_Light.jpg" width="640" height="640" loading="lazy" decoding="async" alt="Gorra Gucci con estampado GG">
+        <figcaption>Gucci · Mide el contorno de la cabeza y revisa el tipo de ajuste.</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="https://ec.bigban.jp/images/1017004008009/720/1017004008009-1.jpg" width="720" height="720" loading="lazy" decoding="async" alt="Pañuelo cuadrado Hermès Carré 90 con estampado Art des Steppes">
+        <figcaption>Hermès · Comprueba las dimensiones, el tejido y el acabado del borde.</figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="https://shop.r10s.jp/brand-cantabile/cabinet/02698684/08591869/20211205_60.jpg" width="480" height="480" loading="lazy" decoding="async" alt="Pendientes Dior Petit CD de tono dorado">
+        <figcaption>Dior · Revisa las medidas del pendiente, el cierre y el material indicado.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section aria-labelledby="preguntas">
+    <h2 id="preguntas">Preguntas frecuentes</h2>
+    <details open>
+      <summary>¿Qué es un FansBuy spreadsheet?</summary>
+      <p>Es un directorio de enlaces a productos que sirve para localizar fichas y comparar variantes. En esta guía, las categorías llevan al catálogo de HipoBuyFind.</p>
+    </details>
+    <details>
+      <summary>¿Necesito Excel para consultar las categorías?</summary>
+      <p>No. Los enlaces se abren en el navegador y puedes consultar las categorías desde el móvil.</p>
+    </details>
+    <details>
+      <summary>¿Cómo elijo la talla si la ficha usa otra numeración?</summary>
+      <p>Compara las medidas en centímetros de la variante elegida con las de una prenda o un calzado que ya te quede bien.</p>
+    </details>
+    <details>
+      <summary>¿Las fotos QC confirman la autenticidad?</summary>
+      <p>Una foto QC permite revisar el estado y la variante recibida. Para comprobar la autenticidad, consulta la procedencia y la documentación del vendedor.</p>
+    </details>
+    <details>
+      <summary>¿Cómo estimo el coste total de un envío a España o Latinoamérica?</summary>
+      <p>Suma el producto, el envío local, las comisiones y el transporte internacional. Consulta si se aplican impuestos o gastos de gestión en el país de destino.</p>
+    </details>
+  </section>
+</main>
+<footer class="wrap">
+  <p>Guía editorial independiente. Las marcas se mencionan para identificar las imágenes de referencia.</p>
+</footer>
+</body>
+</html>
